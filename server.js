@@ -75,7 +75,19 @@ app.delete("/api/notes/:id", function(req, res) {
   res.send(JSON.parse(noteArr));
 });
 
+// HTML GET Requests
 
+app.get("/notes", function(req, res) {
+  res.sendFile(path.join(__dirname, "Develop/public/notes.html"));
+  });
+  
+  app.get("/api/notes", function(req, res) {
+  return res.sendFile(path.json(__dirname, "Develop/db/db.json"));
+  });
+  
+  app.get("*", function(req, res) {
+  res.sendFile(path.join(__dirname, "Develop/public/index.html"));
+  });
 
 
 
