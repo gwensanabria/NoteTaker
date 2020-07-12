@@ -5,6 +5,7 @@ Allows user to input, view, and delete notes.
 ## Installation
 
 Click on attached link.
+![](example.gif)
 
 ## Usage
 
